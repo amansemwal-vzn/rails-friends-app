@@ -1,0 +1,10 @@
+<%= render @friend %>
+
+<div class="p-3 bg-body-secondary d-flex justify-content-between">
+  <div>
+    <%= link_to "Edit this friend", edit_friend_path(@friend), class:"p-2 mb-2 btn btn-secondary" %>
+    <%= link_to "Back to friends", friends_path, class:"p-2 mb-2 btn btn-dark" %>
+  </div>
+  <%= button_to "Delete this friend", @friend, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
+
+</div>
